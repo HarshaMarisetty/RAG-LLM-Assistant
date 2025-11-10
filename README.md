@@ -219,7 +219,7 @@ Below are the screenshots demonstrating how the chatbot works across different q
 
 The chatbot launches with a sleek dark-themed Streamlit interface, awaiting user input.
 
-![alt text](images/Interface.png)
+![Chatbot Interface](Interface.png)
 ---
 
 ###  2) Local Knowledge Query (MongoDB Context)
@@ -232,8 +232,8 @@ When the user asks a MongoDB-related question, the chatbot retrieves the answer 
 **Response:**  
 The system fetches relevant chunks from locally stored MongoDB PDFs and summarizes them via **Groq Llama 3.1**.
 
-![alt text](images/local1.png)
-![alt text](images/Local2.png)
+![MongoDB Local Query - Screenshot 1](local1.png)
+![MongoDB Local Query - Screenshot 2](Local2.png)
 ---
 
 ###  3) Web-Based Query (Non-Local Context)
@@ -247,7 +247,7 @@ In this case, the **Tavily Search API** is triggered to fetch real-time informat
 **Response:**  
 The chatbot retrieves and summarizes the latest web data, generating an accurate and human-like summary.
 
-![alt text](images/Web.png)
+![Web-Based Query Screenshot](Web.png)
 
 
 ---
@@ -265,3 +265,4 @@ The chatbot retrieves and summarizes the latest web data, generating an accurate
 | UI                | `Streamlit`                      | Frontend          | Chat Interface     |
 
 ---
+
