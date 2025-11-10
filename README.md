@@ -247,9 +247,7 @@ In this case, the **Tavily Search API** is triggered to fetch real-time informat
 **Response:**  
 The chatbot retrieves and summarizes the latest web data, generating an accurate and human-like summary.
 
-![
-    
-](images/Web.png)
+![alt text](images/Web.png)
 
 
 ---
