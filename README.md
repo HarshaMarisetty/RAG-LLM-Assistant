@@ -8,9 +8,9 @@ Contents:
 * [Pre-requisites](#Pre-requisites)
 * [Overview](#Overview)
 * [Step-by-Step Workflow Explanation](#stepbystep)
-* [User Interface](#UserInterface)
-* [RAG Flow Summary](#RAGFlowSummary)
-* [Demo](#Demo)
+* [User Interface](#userinterface)
+* [RAG Flow Summary](#ragflowsummary)
+* [Demo](#demo)
 
 ---
 
@@ -264,7 +264,7 @@ Finally, the results are displayed in a **Streamlit-based chatbot UI**.
 4. Chat history retained for context continuity.
 
 ---
-##  User Interface<a name="UserInterface"></a>
+##  User Interface<a name="userinterface"></a>
 
 Below are the screenshots demonstrating how the chatbot works across different query contexts.
 
@@ -307,7 +307,7 @@ The chatbot retrieves and summarizes the latest web data, generating an accurate
 ![Web-Based Query Screenshot](Web.png)
 
 ---
-##  RAG Flow Summary<a name="RAGFlowSummary"></a>
+##  RAG Flow Summary<a name="ragflowsummary"></a>
 
 | Stage             | Component                        | Technology Used   | Output             |
 | ----------------- | -------------------------------- | ----------------- | ------------------ |
@@ -322,9 +322,10 @@ The chatbot retrieves and summarizes the latest web data, generating an accurate
 
 ---
 
-##  Demo <a name="Demo"></a>
+##  Demo <a name="demo"></a>
 
 Here’s a short demo video showcasing how the **RAG Chatbot** works in real time:
+
 
 
 
