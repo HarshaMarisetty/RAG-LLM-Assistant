@@ -7,7 +7,7 @@ Contents:
 ---
 * [Pre-requisites](#Pre-requisites)
 * [Overview](#Overview)
-* [Step-by-Step Workflow Explanation](#StepbyStepWorkflowExplanation)
+* [Step-by-Step Workflow Explanation](#StepbyStep)
 * [User Interface](#UserInterface)
 * [RAG Flow Summary](#RAGFlowSummary)
 * [Demo](#Demo)
@@ -81,7 +81,7 @@ The chatbot was built using:
 
 ---
 
-##  Step-by-Step Workflow Explanation<a name="StepbyStepWorkflowExplanation"></a>
+##  Step-by-Step Workflow Explanation<a name="StepbyStep"></a>
 
 ### **1️) Uploading the PDF Document**
 
@@ -325,4 +325,5 @@ The chatbot retrieves and summarizes the latest web data, generating an accurate
 ##  Demo <a name="Demo"></a>
 
 Here’s a short demo video showcasing how the **RAG Chatbot** works in real time:
+
 
