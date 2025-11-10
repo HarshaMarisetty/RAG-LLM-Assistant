@@ -326,6 +326,11 @@ The chatbot retrieves and summarizes the latest web data, generating an accurate
 
 Here’s a short demo video showcasing how the **RAG Chatbot** works in real time:
 
+▶️ [Watch the Mongo-Bot Demo on YouTube](https://www.youtube.com/watch?v=9ZIMXqkh7Rs)
 
+This video demonstrates:
 
-
+* Local MongoDB PDF-based retrieval using FAISS
+* Real-time fallback using Tavily Search API
+* Response generation via Groq Llama 3.1
+* Streamlit chatbot interface walkthrough
