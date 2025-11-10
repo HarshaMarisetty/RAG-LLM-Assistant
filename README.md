@@ -3,9 +3,64 @@
 
 #  RAG-Based Intelligent Conversational AI Chatbot using LangChain, FAISS, Groq LLM & Tavily Search
 
+Contents:
+---
+* [Pre-requisites](#Pre-requisites)
+* [Overview](#Overview)
+* [Step-by-Step Workflow Explanation](#StepbyStepWorkflowExplanation)
+* [User Interface](#UserInterface)
+* [RAG Flow Summary](#RAGFlowSummary)
+* [Demo](#Demo)
+
 ---
 
-##  Overview
+## Pre-requisites<a name="Pre-requisites"></a>
+
+Before running the **RAG Chatbot** application, make sure your environment is properly configured.
+
+### 1) Install Python
+
+Ensure that **Python 3.9 or higher** is installed on your system.
+
+To check your version:
+```python
+python --version
+```
+
+### 2) Create a Virtual Environment
+
+Creating a virtual environment isolates project dependencies and prevents conflicts.
+
+```
+python -m venv env
+
+env\Scripts\activate
+```
+
+Once activated, you’ll see (env) appear before your command prompt.
+
+### 3) Install Required Dependencies
+
+After activating the environment, install all dependencies.
+
+If you have a requirements.txt file:
+
+```
+pip install -r requirements.txt
+
+```
+
+## 4) Run the Chatbot
+
+Once setup is complete, start the chatbot with Streamlit:
+```
+streamlit run ui.py
+
+```
+
+---
+
+##  Overview<a name="Overview"></a>
 
 This project demonstrates an **end-to-end Retrieval-Augmented Generation (RAG)** pipeline that integrates **local knowledge retrieval** from **MongoDB-related PDFs** with **real-time web intelligence** using **Tavily Search API** and **Groq Llama 3.1 LLM**.
 
@@ -26,7 +81,7 @@ The chatbot was built using:
 
 ---
 
-##  Step-by-Step Workflow Explanation
+##  Step-by-Step Workflow Explanation<a name="StepbyStepWorkflowExplanation"></a>
 
 ### **1️) Uploading the PDF Document**
 
@@ -209,7 +264,7 @@ Finally, the results are displayed in a **Streamlit-based chatbot UI**.
 4. Chat history retained for context continuity.
 
 ---
-##  User Interface & Output Screenshots
+##  User Interface<a name="UserInterface"></a>
 
 Below are the screenshots demonstrating how the chatbot works across different query contexts.
 
@@ -220,6 +275,7 @@ Below are the screenshots demonstrating how the chatbot works across different q
 The chatbot launches with a sleek dark-themed Streamlit interface, awaiting user input.
 
 ![Chatbot Interface](Interface.png)
+
 ---
 
 ###  2) Local Knowledge Query (MongoDB Context)
@@ -234,6 +290,7 @@ The system fetches relevant chunks from locally stored MongoDB PDFs and summariz
 
 ![MongoDB Local Query - Screenshot 1](local1.png)
 ![MongoDB Local Query - Screenshot 2](Local2.png)
+
 ---
 
 ###  3) Web-Based Query (Non-Local Context)
@@ -249,9 +306,8 @@ The chatbot retrieves and summarizes the latest web data, generating an accurate
 
 ![Web-Based Query Screenshot](Web.png)
 
-
 ---
-##  RAG Flow Summary
+##  RAG Flow Summary<a name="RAGFlowSummary"></a>
 
 | Stage             | Component                        | Technology Used   | Output             |
 | ----------------- | -------------------------------- | ----------------- | ------------------ |
@@ -265,4 +321,8 @@ The chatbot retrieves and summarizes the latest web data, generating an accurate
 | UI                | `Streamlit`                      | Frontend          | Chat Interface     |
 
 ---
+
+##  Demo <a name="Demo"></a>
+
+Here’s a short demo video showcasing how the **RAG Chatbot** works in real time:
 
