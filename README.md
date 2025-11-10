@@ -26,30 +26,6 @@ The chatbot was built using:
 
 ---
 
-##  Architecture Workflow
-
-**End-to-End Workflow:**
-
-```mermaid
-flowchart TD
-A[User (Streamlit UI)] --> B[RAGSearch Class (search.py)]
-B --> C[FAISS Vector Store (Local Knowledge)]
-C -->|Match Found| D[Context Sent to Groq LLM for Summarization]
-C -->|No Match| E[Tavily Search API (Web Retrieval)]
-E --> F[Groq LLM Summarization of Web Results]
-D --> G[Formatted Response to User]
-F --> G
-subgraph Ingestion Pipeline
-H[data_loader.py] --> I[embeddings.py: Chunking + Encoding]
-I --> C
-end
-G --> A
-```
-
-📷 *(Add Screenshot: `images/workflow.png`)*
-
----
-
 ##  Step-by-Step Workflow Explanation
 
 ### **1️) Uploading the PDF Document**
